@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News CHANNEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/Red and Yellow Live Breaking News Logo.jpg" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <section class="contact-form">
+        <h4 class="sectionHeader">contact us</h4>
+        <h1 class="heading">Get In Touch!</h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+            inventore omnis aliquid rerum alias molestias.</p>
+        
+        <div class="contactForm">
+            <form action="#" name="submit-to-google-sheet">
+             <h1 class="sub-heading">Need Support !</h1>
+             <p class="para para2">Contact us for a quote , help to join the them.</p>
+             <input type="text" class="input" placeholder="your name" name="name">
+             <input type="text" class="input" placeholder="your email" name="email">
+             <input type="text" class="input" placeholder="your Message" name="message">
+             <!-- <textarea class="input" cols="30" rows="5" placeholder="Your message..."></textarea> -->
+             <input id="#" type="submit" class="input submit" value="Submit">
+            </form>
+
+            
+        
+    
+            <div class="map-container">
+                <div class="mapBg"></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9914410252845!2d2.291906375932066!3d48.85837360070842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2set!4v1695627657575!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contactMethod">
+            <div class="method">
+                <i class="fa-solid fa-location-dot contactIcon"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Location</h1>
+                    <p class="para">2276 Lynn Ogden Lane Beaumont</p>
+                </article>
+            </div>
+    
+            <div class="method">
+                <i class="fa-solid fa-envelope contactIcon"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Email</h1>
+                    <p class="para">Email: programminginsider2021@gmail.com</p>
+                </article>
+            </div>
+    
+            <div class="method">
+                <i class="fa-solid fa-phone contactIcon"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Phone</h1>
+                    <p class="para">2276 Lynn Ogden Lane Beaumont</p>
+                </article>
+            </div>
+        </div>
+       </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
